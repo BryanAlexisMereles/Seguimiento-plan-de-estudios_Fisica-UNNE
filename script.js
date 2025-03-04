@@ -307,12 +307,26 @@ function renderizarMaterias() {
     "filtro-licenciatura"
   ).checked;
 
-  const todasMaterias = new Set([
+  const todasMaterias = [
     ...Object.keys(profesorado.materias),
     ...Object.keys(licenciatura.materias),
-  ]);
+  ];
+  const materiasUnicas = [...new Set(todasMaterias)];
 
-  todasMaterias.forEach((id) => {
+  const materiasOrdenadas = materiasUnicas.sort((a, b) => {
+    const materiaA = profesorado.materias[a] || licenciatura.materias[a];
+    const materiaB = profesorado.materias[b] || licenciatura.materias[b];
+
+    if (materiaA.año < materiaB.año) return -1;
+    if (materiaA.año > materiaB.año) return 1;
+
+    if (materiaA.periodo < materiaB.periodo) return -1;
+    if (materiaA.periodo > materiaB.periodo) return 1;
+
+    return 0;
+  });
+
+  materiasOrdenadas.forEach((id) => {
     const materiaDiv = document.createElement("div");
     materiaDiv.id = `materia-${id}`;
     contenedor.appendChild(materiaDiv);
