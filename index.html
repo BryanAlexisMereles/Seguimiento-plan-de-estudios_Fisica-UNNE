@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguimiento de Materias - Física UNNE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVElEQVQ4jY2TsUoDQRCGv7uLgsUPEEsL0UKwsPYH7DW+gfgA7sRj+AdIra1tLSwsbKxtbCwsLBRrWwsLCwsrKwt/QCxE2c3OzszOfZmd2c3MzAwiIvzWNS0iIrIsq2lJktQ0zXEcRKSqqlRVFUnSsiwry7Js4+Pj3nvvvd/vH8dxKIqiaZpKpRLFYpGmaWiaJpFIFKIoimmaIAjCfr/f7Xa73W63O51OIpEIQRDEcRyPx2M2m4UQ2m63dV2XIAiCIAjCfr8/HA6HLMuaz+ez2Wya5iAIQqZpJpPJ7/dHo9GmaZqmKIoCAGAYRjAYjMPhcBgMh8NhMBgOh8PhcIRCIYqiIAiCIEQul8vlcrmcTqfD4TDLsqz7/R5AEEVRFARBEEVRFEXRNE3TdF3XdV3XarVarc/n80VRFEVRFEVRFEVRFEXRNE3TdF3X9X+/YxRFURRFURRFURRFURRF0zRN0/QP3s8xWHsZ2vQAAAAASUVORK5CYII="
+    />
+    <script>
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      document.documentElement.className = savedTheme + "-theme";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div id="congrats-modal" class="congrats-modal"></div>
+    <div class="container">
+      <div class="theme-toggle">
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-checkbox" />
+          <span class="slider">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+          </span>
+        </label>
+      </div>
+      <div class="header">
+        <h1 id="page-title">Seguimiento de Materias - Física UNNE</h1>
+        <div class="user-name">
+          <label for="user-name-input">Tu nombre:</label>
+          <input
+            type="text"
+            id="user-name-input"
+            placeholder="Ingresa tu nombre"
+          />
+        </div>
+      </div>
+
+      <div class="filtros">
+        <h3>Filtros:</h3>
+        <div class="checkbox-container">
+          <label>
+            <input
+              type="checkbox"
+              id="filtro-profesorado"
+              checked
+              onchange="aplicarFiltroActivo()"
+            />
+            <i class="fas fa-chalkboard-teacher"></i> Profesorado
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="filtro-licenciatura"
+              checked
+              onchange="aplicarFiltroActivo()"
+            />
+            <i class="fas fa-graduation-cap"></i> Licenciatura
+          </label>
+          <label>
+            <input type="checkbox" id="recordar-filtros" />
+            <i class="fas fa-memory"></i> Recordar
+          </label>
+        </div>
+        <button id="filtro-todas" onclick="mostrarTodas()">
+          <i class="fas fa-list"></i> Todas
+        </button>
+        <button id="filtro-disponibles" onclick="mostrarDisponibles()">
+          <i class="fas fa-book-open"></i> Disponibles para cursar
+        </button>
+        <button id="filtro-rendir" onclick="mostrarRendir()">
+          <i class="fas fa-pen"></i> Disponibles para rendir
+        </button>
+        <button id="filtro-equivalencias" onclick="mostrarEquivalencias()">
+          <i class="fas fa-exchange-alt"></i> Equivalencias
+        </button>
+        <button id="filtro-aprobadas" onclick="mostrarAprobadas()">
+          <i class="fas fa-check-circle"></i> Aprobadas
+        </button>
+        <button id="filtro-regulares" onclick="mostrarRegulares()">
+          <i class="fas fa-clock"></i> Regulares
+        </button>
+      </div>
+
+      <div class="reset-container">
+        <button class="reset-button" onclick="resetearProgreso()">
+          <i class="fas fa-trash-alt"></i> Resetear Progreso
+        </button>
+      </div>
+
+      <div class="progreso">
+        <h3>Progreso de las carreras</h3>
+        <p id="progreso-profesorado-title">Profesorado:</p>
+        <div class="barra-progreso">
+          <div id="barra-regular-prof" class="barra-regular"></div>
+          <div id="barra-aprobada-prof" class="barra-aprobada"></div>
+        </div>
+        <p id="porcentaje-prof"></p>
+        <p id="progreso-licenciatura-title">Licenciatura:</p>
+        <div class="barra-progreso">
+          <div id="barra-regular-lic" class="barra-regular"></div>
+          <div id="barra-aprobada-lic" class="barra-aprobada"></div>
+        </div>
+        <p id="porcentaje-lic"></p>
+      </div>
+
+      <div id="listaMaterias" class="materias-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

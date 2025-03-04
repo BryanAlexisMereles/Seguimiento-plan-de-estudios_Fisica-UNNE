@@ -1,0 +1,391 @@
+{
+  "carrera": "Profesorado en Física",
+  "materias": {
+    "EXAG-105": {
+      "nombre": "Taller de Tecnología Educativa",
+      "año": 4,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-285", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "aprobada" },
+          { "id": "EXAG-257", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-124": {
+      "nombre": "Física General y Biológica",
+      "año": 4,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-252", "cond": "aprobada" },
+          { "id": "EXAG-257", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-257", "cond": "aprobada" },
+          { "id": "EXAG-252", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-125": {
+      "nombre": "Geología",
+      "año": 1,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-62", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-62", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-240": {
+      "nombre": "Laboratorio de Mecánica Clásica",
+      "año": 2,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-245": {
+      "nombre": "Laboratorio de Calor y Termodinámica",
+      "año": 2,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-279", "cond": "regularizada" },
+          { "id": "EXAG-240", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-246": {
+      "nombre": "Electricidad y Magnetismo",
+      "año": 3,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-244", "cond": "regularizada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-247": {
+      "nombre": "Laboratorio de Electricidad y Magnetismo",
+      "año": 3,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-251": {
+      "nombre": "Instrumentación y Mediciones Electrónicas",
+      "año": 3,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-188", "cond": "aprobada" }
+        ],
+        "aprobar": [{ "id": "EXAG-246", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-252": {
+      "nombre": "Óptica y Sonido",
+      "año": 3,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" }
+        ],
+        "aprobar": [{ "id": "EXAG-246", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-253": {
+      "nombre": "Laboratorio de Óptica y Sonido",
+      "año": 3,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-246", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-257": {
+      "nombre": "Física Experimental I",
+      "año": 4,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-255", "cond": "aprobada" },
+          { "id": "EXAG-253", "cond": "aprobada" },
+          { "id": "EXAG-251", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-285": {
+      "nombre": "Astronomía",
+      "año": 4,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-252", "cond": "regularizada" },
+          { "id": "EXAG-125", "cond": "aprobada" },
+          { "id": "EXAG-253", "cond": "aprobada" }
+        ],
+        "aprobar": [{ "id": "EXAG-252", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-286": {
+      "nombre": "Técnicas Nucleares",
+      "año": 4,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-255", "cond": "aprobada" },
+          { "id": "EXAG-253", "cond": "aprobada" },
+          { "id": "EXAG-188", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-102": {
+      "nombre": "Epistemología y Metodología de la Investigación",
+      "año": 4,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [{ "modulo": "disciplinar", "aprobadas": 11 }],
+        "aprobar": [{ "modulo": "disciplinar", "aprobadas": 11 }]
+      }
+    },
+    "EXAG-244": {
+      "nombre": "Calor y Termodinámica",
+      "año": 2,
+      "periodo": "2°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "regularizada" },
+          { "id": "EXAG-279", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-279": {
+      "nombre": "Mecánica Clásica",
+      "año": 2,
+      "periodo": "1°",
+      "modulo": "disciplinar",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-184", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-62": {
+      "nombre": "Álgebra y Geometría Analítica",
+      "año": 1,
+      "periodo": "1°",
+      "modulo": "general",
+      "correlativas": {}
+    },
+    "EXAG-182": {
+      "nombre": "Cálculo Diferencial e Integral I",
+      "año": 1,
+      "periodo": "1°",
+      "modulo": "general",
+      "correlativas": {
+        "aprobar": [{ "id": "EXAG-62", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-184": {
+      "nombre": "Cálculo Diferencial e Integral II",
+      "año": 1,
+      "periodo": "2°",
+      "modulo": "general",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "regularizada" },
+          { "id": "EXAG-182", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-188": {
+      "nombre": "Estadística y Análisis de Datos",
+      "año": 1,
+      "periodo": "2°",
+      "modulo": "general",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "regularizada" },
+          { "id": "EXAG-182", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-249": {
+      "nombre": "Física Matemática I",
+      "año": 2,
+      "periodo": "1°",
+      "modulo": "general",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-184", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-250": {
+      "nombre": "Física Matemática II",
+      "año": 2,
+      "periodo": "2°",
+      "modulo": "general",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-249", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-255": {
+      "nombre": "Química General",
+      "año": 3,
+      "periodo": "1°",
+      "modulo": "general",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-245", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-245", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-240", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-03": {
+      "nombre": "Competencias Lingüístico Comunicativas",
+      "año": 1,
+      "periodo": "1°",
+      "modulo": "pedagogico",
+      "correlativas": {}
+    },
+    "EXAG-19": {
+      "nombre": "Didáctica",
+      "año": 3,
+      "periodo": "2°",
+      "modulo": "pedagogico",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-81", "cond": "aprobada" },
+          { "id": "EXAG-10", "cond": "aprobada" },
+          { "id": "EXAG-13", "cond": "aprobada" },
+          {
+            "modulos": ["general", "pedagogico", "disciplinar"],
+            "aprobadas": 5
+          }
+        ],
+        "aprobar": [
+          { "id": "EXAG-81", "cond": "aprobada" },
+          { "id": "EXAG-10", "cond": "aprobada" },
+          { "id": "EXAG-13", "cond": "aprobada" },
+          {
+            "modulos": ["general", "pedagogico", "disciplinar"],
+            "aprobadas": 5
+          }
+        ]
+      }
+    },
+    "EXAG-10": {
+      "nombre": "Pedagogía",
+      "año": 2,
+      "periodo": "1°",
+      "modulo": "pedagogico",
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-03", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-03", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-13": {
+      "nombre": "Psicología del Aprendizaje y del Desarrollo",
+      "año": 2,
+      "periodo": "2°",
+      "modulo": "pedagogico",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-03", "cond": "aprobada" },
+          { "id": "EXAG-81", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-03", "cond": "aprobada" },
+          { "id": "EXAG-81", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-81": {
+      "nombre": "Problemática Filosófica Contemporánea",
+      "año": 1,
+      "periodo": "2°",
+      "modulo": "pedagogico",
+      "correlativas": {}
+    },
+    "EXAG-283": {
+      "nombre": "Didáctica de la Física y Práctica de Residencia",
+      "año": 4,
+      "periodo": "anual",
+      "modulo": "pedagogico",
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-19", "cond": "aprobada" },
+          { "modulo": "disciplinar", "aprobadas": 5 }
+        ],
+        "aprobar": [{ "modulo": "disciplinar", "aprobadas": 5 }]
+      }
+    }
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "carrera": "Licenciatura en Ciencias Físicas",
+  "materias": {
+    "EXAG-62": {
+      "nombre": "Algebra y Geometría Analítica",
+      "año": 1,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-182": {
+      "nombre": "Cálculo Diferencial e Integral I",
+      "año": 1,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-184": {
+      "nombre": "Cálculo Diferencial e Integral II",
+      "año": 1,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "regularizada" },
+          { "id": "EXAG-182", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-188": {
+      "nombre": "Estadística y Análisis de Datos",
+      "año": 2,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-240": {
+      "nombre": "Laboratorio de Mecánica Clásica",
+      "año": 1,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-243": {
+      "nombre": "Programación",
+      "año": 1,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-245": {
+      "nombre": "Laboratorio de Calor y Termodinámica",
+      "año": 1,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-182", "cond": "regularizada" },
+          { "id": "EXAG-279", "cond": "regularizada" },
+          { "id": "EXAG-240", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-240", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-246": {
+      "nombre": "Electricidad y Magnetismo",
+      "año": 2,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-247": {
+      "nombre": "Laboratorio de Electricidad y Magnetismo",
+      "año": 2,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-240", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-240", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-249": {
+      "nombre": "Física Matemática I",
+      "año": 2,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "regularizada" },
+          { "id": "EXAG-184", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-182", "cond": "aprobada" },
+          { "id": "EXAG-62", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-250": {
+      "nombre": "Física Matemática II",
+      "año": 2,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "regularizada" },
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-251": {
+      "nombre": "Instrumentación y Mediciones Electrónicas",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-246", "cond": "aprobada" },
+          { "id": "EXAG-247", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-246", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-252": {
+      "nombre": "Optica y Sonido",
+      "año": 2,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-246", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-253": {
+      "nombre": "Laboratorio de Optica y Sonido",
+      "año": 2,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-247", "cond": "regularizada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-254": {
+      "nombre": "Inglés Técnico",
+      "año": 2,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-255": {
+      "nombre": "Química General",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-244", "cond": "aprobada" }],
+        "aprobar": [{ "id": "EXAG-244", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-256": {
+      "nombre": "Electromagnetismo",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-246", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-246", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" },
+          { "id": "EXAG-252", "cond": "aprobada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-257": {
+      "nombre": "Física Experimental I",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-188", "cond": "regularizada" },
+          { "id": "EXAG-253", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-247", "cond": "aprobada" },
+          { "id": "EXAG-253", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-258": {
+      "nombre": "Mecánica Cuántica I",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-188", "cond": "regularizada" },
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-248", "cond": "regularizada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-188", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" },
+          { "id": "EXAG-248", "cond": "aprobada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-259": {
+      "nombre": "Física Experimental II",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-256", "cond": "regularizada" },
+          { "id": "EXAG-257", "cond": "regularizada" },
+          { "id": "EXAG-251", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-257", "cond": "aprobada" },
+          { "id": "EXAG-251", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-260": {
+      "nombre": "Física Computacional",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-243", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-243", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-262": {
+      "nombre": "Termodinámica Estadística",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-188", "cond": "aprobada" },
+          { "id": "EXAG-258", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-188", "cond": "aprobada" },
+          { "id": "EXAG-258", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-263": {
+      "nombre": "Física de Sólidos",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-255", "cond": "aprobada" },
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-262", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-255", "cond": "aprobada" },
+          { "id": "EXAG-258", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-264": {
+      "nombre": "Mecánica Cuántica II",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-258", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-258", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-265": {
+      "nombre": "Seminario sobre Temas de Física",
+      "año": 5,
+      "periodo": "1° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-256", "cond": "aprobada" },
+          { "id": "EXAG-264", "cond": "regularizada" },
+          { "id": "EXAG-262", "cond": "regularizada" },
+          { "id": "EXAG-263", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-286", "cond": "aprobada" },
+          { "id": "EXAG-264", "cond": "aprobada" },
+          { "id": "EXAG-262", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-266": {
+      "nombre": "Trabajo Final",
+      "año": 5,
+      "periodo": "1° anual",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-256", "cond": "aprobada" },
+          { "id": "EXAG-260", "cond": "aprobada" },
+          { "id": "EXAG-259", "cond": "aprobada" },
+          { "id": "EXAG-263", "cond": "regularizada" },
+          { "id": "EXAG-286", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-263", "cond": "aprobada" },
+          { "id": "EXAG-265", "cond": "aprobada" },
+          { "id": "EXAG-264", "cond": "aprobada" },
+          { "id": "EXAG-262", "cond": "aprobada" },
+          { "id": "EXAG-286", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-279": {
+      "nombre": "Mecánica Clásica",
+      "año": 1,
+      "periodo": "1° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {}
+    },
+    "EXAG-244": {
+      "nombre": "Calor y Termodinámica",
+      "año": 1,
+      "periodo": "2° cuatrimestre",
+      "modulo": "general",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-182", "cond": "regularizada" },
+          { "id": "EXAG-279", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-279", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-248": {
+      "nombre": "Mecánica Analítica",
+      "año": 2,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-286": {
+      "nombre": "Tecnicas Nucleares",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "especifico",
+      "puntos": 0,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-255", "cond": "regularizada" },
+          { "id": "EXAG-257", "cond": "regularizada" },
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-251", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-255", "cond": "aprobada" },
+          { "id": "EXAG-257", "cond": "aprobada" },
+          { "id": "EXAG-258", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-269": {
+      "nombre": "Seminarios de Termodinámica Moderna (Optativa)",
+      "año": 5,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" },
+          { "id": "EXAG-248", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" },
+          { "id": "EXAG-248", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-272": {
+      "nombre": "Aplicaciones Térmicas de la Energía Solar (Optativa)",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "regularizada" },
+          { "id": "EXAG-244", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-244", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-275": {
+      "nombre": "Radiaciones Ionizantes (Optativa)",
+      "año": 5,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-256", "cond": "regularizada" },
+          { "id": "EXAG-286", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-256", "cond": "aprobada" },
+          { "id": "EXAG-286", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-285": {
+      "nombre": "Astronomia (Optativa)",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-252", "cond": "regularizada" },
+          { "id": "EXAG-253", "cond": "aprobada" }
+        ],
+        "aprobar": [{ "id": "EXAG-252", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-541": {
+      "nombre": "Dinámica de Fluídos Geofísicos (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-590": {
+      "nombre": "Introducción a la Espectroscopia de Resonancia Magnética Nuclear (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-258", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-258", "cond": "regularizada" }]
+      }
+    },
+    "EXAG-593": {
+      "nombre": "Elasticidad en Sólidos (Optativa)",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-248", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-250", "cond": "aprobada" },
+          { "id": "EXAG-248", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-594": {
+      "nombre": "Aplicaciones de la Mecánica Analítica (Optativa)",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-248", "cond": "aprobada" }],
+        "aprobar": [{ "id": "EXAG-248", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-596": {
+      "nombre": "Introducción a la Teoría Cuántica de Campos (Optativa)",
+      "año": 5,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-264", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-264", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-648": {
+      "nombre": "Introducción a la Nucleosíntesis Astrofísica (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-256", "cond": "regularizada" },
+          { "id": "EXAG-258", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-256", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-710": {
+      "nombre": "Introducción a la Mecánica Cuántica Relativista (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-264", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-264", "cond": "regularizada" }]
+      }
+    },
+    "EXAG-711": {
+      "nombre": "Elementos de Astrofisica (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-247", "cond": "regularizada" },
+          { "id": "EXAG-184", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-184", "cond": "regularizada" },
+          { "id": "EXAG-246", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-773": {
+      "nombre": "Dinámica Cuántica en Nanoestructuras (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-260", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-260", "cond": "regularizada" },
+          { "id": "EXAG-258", "cond": "regularizada" }
+        ]
+      }
+    },
+    "EXAG-273": {
+      "nombre": "Optica de Fourier (Optativa)",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-252", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-729": {
+      "nombre": "Fundamentos de Optica Nanométrica (Optativa)",
+      "año": 4,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-departamento",
+      "puntos": 30,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-250", "cond": "regularizada" },
+          { "id": "EXAG-252", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-252", "cond": "aprobada" },
+          { "id": "EXAG-250", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-11": {
+      "nombre": "Complementos de Algebra Lineal (Optativa)",
+      "año": 5,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-184", "cond": "aprobada" },
+          { "id": "EXAG-249", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-249", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-57": {
+      "nombre": "Funciones Reales (Optativa)",
+      "año": 5,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-250", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-250", "cond": "regularizada" }]
+      }
+    },
+    "EXAG-66": {
+      "nombre": "Química Inorgánica (Optativa)",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {}
+    },
+    "EXAG-125": {
+      "nombre": "Geología (Optativa)",
+      "año": 3,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-62", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-62", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-224": {
+      "nombre": "Propagación y Antenas (Optativa)",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-256", "cond": "aprobada" }],
+        "aprobar": [{ "id": "EXAG-256", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-750": {
+      "nombre": "Teoría Cualitativa de Ecuaciones Diferenciales Ordinarias (Optativa)",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-249", "cond": "regularizada" },
+          { "id": "EXAG-250", "cond": "regularizada" }
+        ],
+        "aprobar": [{ "id": "EXAG-249", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-585": {
+      "nombre": "Ecuaciones Diferenciales en Derivadas Parciales (Optativa)",
+      "año": 4,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-249", "cond": "regularizada" },
+          { "id": "EXAG-254", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-249", "cond": "aprobada" },
+          { "id": "EXAG-254", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-595": {
+      "nombre": "Geotecnia (Optativa)",
+      "año": 3,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-279", "cond": "aprobada" },
+          { "id": "EXAG-240", "cond": "aprobada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-244", "cond": "aprobada" },
+          { "id": "EXAG-245", "cond": "aprobada" }
+        ]
+      }
+    },
+    "EXAG-712": {
+      "nombre": "Métodos Estadísticos Multivariados (Optativa)",
+      "año": 5,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [{ "id": "EXAG-188", "cond": "regularizada" }],
+        "aprobar": [{ "id": "EXAG-188", "cond": "aprobada" }]
+      }
+    },
+    "EXAG-68": {
+      "nombre": "Química Analítica (Optativa)",
+      "año": 5,
+      "periodo": "1° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {}
+    },
+    "EXAG-730": {
+      "nombre": "Historia y Filosofía de las Ciencias (Optativa)",
+      "año": 5,
+      "periodo": "2° cuatrimestre",
+      "modulo": "optativas-extra-departamento",
+      "puntos": 50,
+      "correlativas": {
+        "cursar": [
+          { "id": "EXAG-255", "cond": "regularizada" },
+          { "id": "EXAG-256", "cond": "regularizada" },
+          { "id": "EXAG-257", "cond": "regularizada" },
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-251", "cond": "regularizada" },
+          { "id": "EXAG-260", "cond": "regularizada" }
+        ],
+        "aprobar": [
+          { "id": "EXAG-255", "cond": "regularizada" },
+          { "id": "EXAG-256", "cond": "regularizada" },
+          { "id": "EXAG-257", "cond": "regularizada" },
+          { "id": "EXAG-258", "cond": "regularizada" },
+          { "id": "EXAG-251", "cond": "regularizada" },
+          { "id": "EXAG-260", "cond": "regularizada" }
+        ]
+      }
+    }
+  }
+}
